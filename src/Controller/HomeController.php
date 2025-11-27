@@ -14,7 +14,7 @@ final class HomeController extends AbstractController
         return $this->render('pages/home.html.twig', [
             'controller_name' => 'HomeController',
         ]);
-    } 
+    }
 
     #[Route('/', name: 'app_home2')]
     public function index2(): Response
@@ -22,7 +22,7 @@ final class HomeController extends AbstractController
         return $this->render('pages/home.html.twig', [
             'controller_name' => 'HomeController',
         ]);
-    } 
+    }
 
     #[Route('/about', name: 'app_about')]
     public function about(): Response
@@ -39,4 +39,13 @@ final class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+//    #[Route('/login', name: 'app_team')]
+//    public function team(): Response
+//    {
+//        return $this->render('login/team.html.twig', [
+//            'controller_name' => 'HomeController',
+//        ]);
+//    }
+
 }
